@@ -11,7 +11,12 @@ int main()
     bn::core::init();
     bn::backdrop::set_color(bn::color(20, 20, 31));
 
-    bn::sprite_ptr myCircle = bn::sprite_items::dot.create_sprite(10, 40);
+        bn::sprite_ptr myCircle = bn::sprite_items::dot.create_sprite(10,40);
+        bn::sprite_ptr myCircle2 = bn::sprite_items::dot.create_sprite(5,40);
+        bn::sprite_ptr myCircle3 = bn::sprite_items::dot.create_sprite(0,40);
+        bn::sprite_ptr myCircle4 = bn::sprite_items::dot.create_sprite(-5,40);
+        bn::sprite_ptr myCircle5 = bn::sprite_items::dot.create_sprite(-10,40);
+
 
     while (true)
     {
