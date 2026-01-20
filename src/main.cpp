@@ -44,7 +44,14 @@ int main()
 
         bn::sprite_ptr myCircle = bn::sprite_items::dot.create_sprite(x, 40);
         circles.push_back(myCircle);
+        }
+    for (int x = -40, y = 40; x <= 40 && y >= -40; x += 10, y -= 10)
+    {
+        BN_LOG("x value", x, "y value", y);
 
+        bn::sprite_ptr myCircle = bn::sprite_items::dot.create_sprite(x, y);
+        circles2.push_back(myCircle);
+    }
     while (true)
     {
 
