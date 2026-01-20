@@ -35,9 +35,8 @@ int main()
              bn::sprite_ptr myCircle9 = bn::sprite_items::dot.create_sprite(-20, 10);
 
              */
-
     bn::vector<bn::sprite_ptr, 10> circles = {};
-
+    bn::vector<bn::sprite_ptr, 10> circles2 = {};
 
     for (int x = -40; x <= 40; x += 10)
     {
@@ -45,7 +44,6 @@ int main()
 
         bn::sprite_ptr myCircle = bn::sprite_items::dot.create_sprite(x, 40);
         circles.push_back(myCircle);
-    }
 
     while (true)
     {
