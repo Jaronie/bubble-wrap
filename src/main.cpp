@@ -2,6 +2,8 @@
 #include <bn_backdrop.h>
 #include <bn_color.h>
 #include <bn_keypad.h>
+#include <bn_sprite_ptr.h>
+#include <bn_sprite_items_dot.h>
 
 int main()
 {
