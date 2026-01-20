@@ -4,6 +4,7 @@
 #include <bn_keypad.h>
 #include <bn_sprite_ptr.h>
 #include <bn_sprite_items_dot.h>
+#include <bn_log.h>
 
 int main()
 {
@@ -36,6 +37,8 @@ int main()
 
     for (int x = -40; x <= 40; x += 10)
     {
+        BN_LOG("x value", x);
+
         bn::sprite_ptr myCircle = bn::sprite_items::dot.create_sprite(x, 40);
     }
 
