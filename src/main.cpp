@@ -11,6 +11,8 @@ int main()
     bn::core::init();
     bn::backdrop::set_color(bn::color(20, 20, 31));
 
+    bn::sprite_ptr myCircle = bn::sprite_items::dot.create_sprite(10, 40);
+
     while (true)
     {
 
