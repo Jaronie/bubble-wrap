@@ -50,10 +50,14 @@ int main()
         BN_LOG("x value", x, "y value", y);
         bn::sprite_ptr myCircle = bn::sprite_items::dot.create_sprite(x, y);
 
-        circles2.push_back(myCircle);
+        for (int i = 0; i < circles2.size(); i++)
+        {
+            circles2[i].set_shear(-2,0); // Not sure why it isn't setting last index's shear. Will debug next time.
+        }
+        circles2.push_back(myCircle); 
     }
 
-    circles[0].set_scale(1.8);
+   //circles[0].set_scale(1.8);
 
     while (true)
     {
