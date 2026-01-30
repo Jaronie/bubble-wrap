@@ -37,6 +37,8 @@ int main()
              */
     bn::vector<bn::sprite_ptr, 10> circles = {};
     bn::vector<bn::sprite_ptr, 10> circles2 = {};
+    bn::vector<bn::sprite_ptr, 10> circles3 = {};
+
 
     for (int x = -40; x <= 40; x += 10)
     {
