@@ -58,6 +58,20 @@ int main()
         }
         circles2.push_back(myCircle); 
     }
+    
+
+        for (int x = -70, y = 40; x <= -60 && y >= -40; y -= 13)
+    {
+        BN_LOG("x value", x);
+
+        for(int i = 0; i < circles3.size(); i++){
+            circles3[i].set_scale(1+(i*0.1));
+        }
+        bn::sprite_ptr myCircle = bn::sprite_items::dot.create_sprite(x, y);
+        circles3.push_back(myCircle);
+        }
+
+
 
    //circles[0].set_scale(1.8);
 
