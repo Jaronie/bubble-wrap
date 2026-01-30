@@ -38,14 +38,13 @@ int main()
     bn::vector<bn::sprite_ptr, 10> circles = {};
     bn::vector<bn::sprite_ptr, 10> circles2 = {};
 
-
     for (int x = -40; x <= 40; x += 10)
     {
         BN_LOG("x value", x);
 
         bn::sprite_ptr myCircle = bn::sprite_items::dot.create_sprite(x, 40);
         circles.push_back(myCircle);
-        }
+    }
     for (int x = -50, y = 40; x <= 40 && y >= -40; x += 10, y -= 10)
     {
         BN_LOG("x value", x, "y value", y);
@@ -73,12 +72,11 @@ int main()
         {
             bn::backdrop::set_color(bn::color(3, 25, 3));
 
-            for(int i = 0; i < 60; i++){
+            for (int i = 0; i < 60; i++)
+            {
                 bn::core::update();
-
             }
             bn::backdrop::set_color(bn::color(20, 20, 31));
-
         }
         if (bn::keypad::b_released())
         {
